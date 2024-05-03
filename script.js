@@ -10,18 +10,13 @@ function fieldCheck() {
         errorMessage.style.display = "block";
    } else {
        errorMessage.style.display = "none";
-   }
-   
+   } 
 }
 
-
-
-function clickButton() {
-    const btn = document.querySelector("button");
+const btn = document.querySelector("button");
     btn.addEventListener("click", function(event) {
     // Empêcher le comportement par défaut du bouton (raffraîchissement de la page)
     event.preventDefault();
     // Appel de la fonction pour vérifier les champs
     fieldCheck();
 });
-}
